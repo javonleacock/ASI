@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<!-- Template by freewebsitetemplates.com -->
+<html>
+<head>
+<meta charset="utf-8" />
+<title>The R.E.A.L. Program</title>
+<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+</head>
+<body>
+	<div id="header">
+			<div id="logo">
+				<a href="index.html"><img src="images/logo.jpg" alt="" /></a>		
+			</div>		
+			<ul>
+				<li><a href="index.html"><span>home</span></a></li>
+				<li><a href="general.html"><span>General Information</span></a></li>
+				<li><a href="medical.html"><span>Medical</span></a></li>
+				<li class="selected"><a href="employment.html"><span>Employment</span></a></li>
+				<li><a href="alcohol.html"><span>Alcohol/Drugs</span></a></li>
+                <li><a href="legal.html"><span>Legal</span></a></li>
+				<li><a href="history.html"><span>History</span></a></li>
+                <li><a href="relation.html"><span>Relationships</span></a></li>	
+                <li><a href="psych.html"><span>Psychiatric</span></a></li>				
+			</ul>
+	</div>
+	<div id="body">
+		<div class="about">
+			<h1>Employment/Support Status</h1>
+			<div>
+				<ul>
+					<b>E1.</b> Education completed: <input type="text" name="id" value=" "  size="7"> 
+					
+				</ul>
+				
+				<ul>
+					<b>E2.</b> Training or technical education completed: <input type="text" name="social" value=" " size="7">
+				</ul>
+				
+				<ul>
+					<b>E3.</b> Do you have a profession, trade, or skill?: 
+					<input type="radio" name="no">
+					<?php if (isset($no) && $no=="No") echo "checked";?>
+					No
+					<input type="radio" name="yes">
+					<?php if (isset($yes) && $yes=="Yes") echo "checked";?>
+					Yes
+				</ul>
+				
+				<ul>
+					<b>E4.</b> Do you have a valid driver's license?: 
+					<input type="radio" name="no">
+					<?php if (isset($no) && $no=="No") echo "checked";?>
+					No
+					<input type="radio" name="yes">
+					<?php if (isset($yes) && $yes=="Yes") echo "checked";?>
+					Yes
+				</ul>
+				
+				<ul>
+					<b>E5.</b> Do you have an automobile available for use?: 
+					<input type="radio" name="no">
+					<?php if (isset($no) && $no=="No") echo "checked";?>
+					No
+					<input type="radio" name="yes">
+					<?php if (isset($yes) && $yes=="Yes") echo "checked";?>
+					Yes
+				</ul>
+				
+				<ul>
+					<b>E6.</b> How long was your longest full-time job?:<input type="text" name="social" value=" " size="7">
+				</ul>
+				
+				<ul>
+					<b>E7.</b> Usual (or last) occupation?: <input type="text" name="social" value=" " size="7">
+				</ul>
+				
+				<ul>
+					<b>E8.</b> Does someone contribute to your support in any way?: 
+					<input type="radio" name="no">
+					<?php if (isset($no) && $no=="No") echo "checked";?>
+					No
+					<input type="radio" name="yes">
+					<?php if (isset($yes) && $yes=="Yes") echo "checked";?>
+					Yes				
+				</ul>
+				
+				<ul>
+					<b>E9.</b> Does this constitue the majority of your support?: 
+					<input type="radio" name="no">
+					<?php if (isset($no) && $no=="No") echo "checked";?>
+					No
+					<input type="radio" name="yes">
+					<?php if (isset($yes) && $yes=="Yes") echo "checked";?>
+					Yes	
+				</ul>
+				
+				<ul>
+					<b>E10.</b> Usual employment pattern, past 3 years: 
+					<select>
+						<option value="pt">Full time (40 hrs/week)</option>
+						<option value="pr">Part time (regular hours)</option>
+						<option value="pu">Part time (irregular hours)</option>
+						<option value="na">Student</option>
+						<option value="pr">Service/Military</option>
+						<option value="pu">Retired/Disability</option>
+						<option value="na">Unemployed</option>
+						<option value="pr">In controlled environment</option>
+					</select> 
+				</ul>
+				
+				<ul>
+					<b>E11.</b> How many days were you paid for working in the past 30 days?: <input type="text" name="social" value=" " size="7">
+				</ul>
+				
+				<ul>
+					<!--space--> <br>				
+				</ul>
+				
+				<ul>
+					<b><i>For Questions E12 & E17:</i></b>				
+				</ul>
+								
+				<ul>
+					<b><i>How much money did you receive from the following sources in the past 30 days?:</i></b>				
+				</ul>
+				
+				<ul>
+					<b>E12.</b>Employment <input type="text" name="social" value=" " size="7">
+				</ul>
+				
+				<ul>
+					<b>E13.</b>Unemployment compensation <input type="text" name="social" value=" " size="7">
+				</ul>
+				
+				<ul>
+					<b>E14.</b>Welfare <input type="text" name="social" value=" " size="7">
+				</ul>
+				
+				<ul>
+					<b>E15.</b>Pension, benefits, or Social Security: <input type="text" name="social" value=" " size="7">
+				</ul>
+				
+				<ul>
+					<b>E16.</b>Mate, family or friends <input type="text" name="social" value=" " size="7">
+				</ul>
+				
+				<ul>
+					<b>E17.</b>Illegal <input type="text" name="social" value=" " size="7">
+				</ul>
+				
+				<ul>
+					<!--space--> <br>				
+				</ul>
+				
+				<ul>
+					<b>E18.</b>How many people depend on you for the majority of their food, shelter, etc? <input type="text" name="social" value=" " size="7">
+				</ul>
+				
+				<ul>
+					<b>E19.</b>How many days have you experienced employment problems in the past 30 days?<input type="text" name="social" value=" " size="7">
+				</ul>
+				
+				<ul>
+					<!--space--> <br>				
+				</ul>
+				
+				<ul>
+					<b><i>For Questions E20 & E21 ask the patient to use the Patient's Rating Scale. </i></b>				
+				</ul>
+				
+				<ul>
+					<b>E20.</b> How troubled or bothered have you been by these employment problems in the past 30 days?: <input type="text" name="social" value=" " size="7">
+				</ul>
+				
+				<ul>
+					<b>E21.</b> How important to you now is treatment for these employment problems?: <input type="text" name="social" value=" " size="7">
+				</ul>
+				
+				<ul>
+					<!--space--> <br>				
+				</ul>
+				
+				<ul>
+					<b><i>Interviewer Severity Rating</i></b>				
+				</ul>
+				
+				<ul>
+					<b>E22.</b> How would you rate the patient's need for employment counseling?: <input type="text" name="id" value=" " size="7">				
+				</ul>
+				
+				<ul>
+					<!--space--> <br>				
+				</ul>
+				
+				<ul>
+					<b><i>Confidence Rating</i></b>	<br>
+                    						
+				</ul>
+				
+				<ul>
+					<b><i>Is the information significantly distored by:</i></b>				
+				</ul>
+				
+				<ul>
+					<b>E23.</b> Patient's misrepresentation?:  
+					<input type="radio" name="no">
+					<?php if (isset($no) && $no=="No") echo "checked";?>
+					No
+					<input type="radio" name="yes">
+					<?php if (isset($yes) && $yes=="Yes") echo "checked";?>
+					Yes
+				
+				</ul>
+				
+				<ul>
+					<b>E24.</b> Patient's inability to understand?:
+					<input type="radio" name="no">
+					<?php if (isset($no) && $no=="No") echo "checked";?>
+					No
+					<input type="radio" name="yes">
+					<?php if (isset($yes) && $yes=="Yes") echo "checked";?>
+					Yes
+				</ul>
+				
+				<ul>
+					<!--space--> <br>				
+				</ul>
+				
+				<ul>
+					<b><i>Employment/Support Comments: </i></b> <br>
+					(include question number with your notes) 				
+				</ul>
+				
+				<ul>
+					<textarea name="comment" rows="25" cols="40"></textarea>				
+				</ul>
+				
+				<ul>
+				<button type="button" onclick="window.print();return false;" />Print!</button>
+				</ul>
+					
+			</div>
+			
+
+			
+
+			
+
+			<!-- Comment: <textarea name="comment" rows="5" cols="10"></textarea> -->
+
+			
+		</div>
+	</div>
+		<div id="footer">
+		<div>
+		<!--
+			<div>
+				<h3>Pasadena</h3>
+				<ul>
+					<li>1710 Strawberry Rd.</li>				
+					<li>Suite 300</li>
+					<li>Pasadena, TX 77502</li>
+					<li>Office: 346-701-1500</li>
+				</ul>			
+			</div>		
+			<div>
+				<h3>Galveston</h3>
+				<ul>
+					<li>Old Central Cultural Center</li>				
+					<li>2627 Avenue M</li>
+					<li>Galveston, TX 77502</li>
+					<li>Office: 409-443-5451</li>
+				</ul>			
+			</div>	
+			
+			<div>
+				<h3>canada</h3>
+				<ul>
+					<li>457-380-1654 main</li>				
+					<li>257-301-9417 toll free</li>
+				</ul>			
+			</div>	
+			<div>
+				<h3>middle east</h3>
+				<ul>
+					<li>457-380-1654 main</li>				
+					<li>257-301-9417 toll free</li>
+				</ul>			
+			</div>	
+			<div>
+				<h3>follow us:</h3>
+				<a class="facebook" href="http://facebook.com/freewebsitetemplates" target="_blank">facebook</a>		
+				<a class="twitter" href="http://twitter.com/fwtemplates" target="_blank">twitter</a>
+			</div>	
+			-->
+		</div>
+		<div>
+			<p>&copy Copyright 2019. All rights reserved</p>
+		</div>
+	</div>
+	</body>
+</html>

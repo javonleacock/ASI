@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<!-- Template by freewebsitetemplates.com -->
+<html>
+<head>
+<meta charset="utf-8" />
+<title>The R.E.A.L. Program</title>
+<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+</head>
+<body>
+	<div id="header">
+			<div id="logo">
+				<a href="index.html"><img src="images/logo.jpg" alt="" /></a>		
+			</div>		
+			<ul>
+				<li><a href="index.html"><span>home</span></a></li>
+				<li><a href="general.html"><span>General Information</span></a></li>
+				<li><a href="medical.html"><span>Medical</span></a></li>
+				<li><a href="employment.html"><span>Employment</span></a></li>
+				<li><a href="alcohol.html"><span>Alcohol/Drugs</span></a></li>
+                <li class="selected"><a href="legal.html"><span>Legal</span></a></li>
+				<li><a href="history.html"><span>History</span></a></li>
+                <li><a href="relation.html"><span>Relationships</span></a></li>	
+                <li><a href="psych.html"><span>Psychiatric</span></a></li>				
+			</ul>
+	</div>
+	<div id="body">
+		<div class="about">
+			<h1>Legal Status</h1>
+			<div>
+				<ul>
+					<b>L1.</b> Was this admission prompted or suggested by the criminal justice system?
+					<input type="radio" name="no">
+					<?php if (isset($no) && $no=="No") echo "checked";?>
+					No
+					<input type="radio" name="yes">
+					<?php if (isset($yes) && $yes=="Yes") echo "checked";?>
+					Yes
+				</ul>
+				
+				<ul>
+					<b>L2.</b> Are you on parole or probation?
+					<input type="radio" name="no">
+					<?php if (isset($no) && $no=="No") echo "checked";?>
+					No
+					<input type="radio" name="yes">
+					<?php if (isset($yes) && $yes=="Yes") echo "checked";?>
+					Yes
+				</ul>
+				
+				<ul>
+					<!--space--> <br>				
+				</ul>
+				
+				<ul>
+					<b>How many times in your life have you been arrested and charged with the following:</b> 
+				</ul>
+				
+				<ul>
+				<table style="width:100%">
+					<tr>
+						<th></th>
+						<th></th>
+						<th></th>
+						<th></th>
+						<th></th>
+						<th></th>
+					</tr>
+					<tr>
+						<td><b>L3.</b></td>
+						<td>Shoplifting/Vandalism</td>
+						<td><input type="text" name="social" value=" " size="7"></td>
+						<td><b>L10.</b></td>
+						<td>Assault</td>
+						<td><input type="text" name="social" value=" " size="7"></td>
+					</tr>
+					<tr>
+						<td><b>L4.</b></td>
+						<td>Parole/Probation Violations</td>
+						<td><input type="text" name="social" value=" " size="7"></td>
+						<td><b>L11.</b></td>
+						<td>Arson</td>
+						<td><input type="text" name="social" value=" " size="7"></td>
+					</tr>
+					<tr>
+						<td><b>L5.</b></td>
+						<td>Drug Charges</td>
+						<td><input type="text" name="social" value=" " size="7"></td>
+						<td><b>L12.</b></td>
+						<td>Rape</td>
+						<td><input type="text" name="social" value=" " size="7"></td>
+					</tr>
+					<tr>
+						<td><b>L6.</b></td>
+						<td>Forgery</td>
+						<td><input type="text" name="social" value=" " size="7"></td>
+						<td><b>L13.</b></td>
+						<td>Homicide/Manslaughter</td>
+						<td><input type="text" name="social" value=" " size="7"></td>
+					</tr>
+					<tr>
+						<td><b>L7.</b></td>
+						<td>Weapons Offense</td>
+						<td><input type="text" name="social" value=" " size="7"></td>
+						<td><b>L14.</b></td>
+						<td>Prostitution</td>
+						<td><input type="text" name="social" value=" " size="7"></td>
+					</tr>
+					<tr>
+						<td><b>L8.</b></td>
+						<td>Burglary/Larceny/Breaking & Entering</td>
+						<td><input type="text" name="social" value=" " size="7"></td>
+						<td><b>L15.</b></td>
+						<td>Assault</td>
+						<td><input type="text" name="social" value=" " size="7"></td>
+					</tr>
+					<tr>
+						<td><b>L9.</b></td>
+						<td>Robbery</td>
+						<td><input type="text" name="social" value=" " size="7"></td>
+						<td><b>L16.</b></td>
+						<td>Other:<input type="text" name="social" value=" " size="20"></td>
+						<td><input type="text" name="social" value=" " size="7"></td>
+					</tr>
+				</table> 
+				</ul>
+				
+				<ul>
+					<!--space--> <br>				
+				</ul>
+				
+				<ul>
+					<b>L17.</b> How many charges resulted in convictions? <input type="text" name="social" value=" " size="7">
+				</ul>
+				
+				<ul>
+					<!--space--> <br>				
+				</ul>
+				
+				<ul>
+					<b>How many times in your life have you been charged with the following:</b> 
+				</ul>
+
+				<ul>
+					<b>L18.</b> Disorderly conduct, vagrancy, public intoxication? <input type="text" name="social" value=" " size="7">
+				</ul>
+				
+				<ul>
+					<b>L19.</b> Driving while intoxicated? <input type="text" name="social" value=" " size="7">
+				</ul>
+				
+				<ul>
+					<b>L20.</b> Major driving violations? <input type="text" name="social" value=" " size="7">
+				</ul>
+				
+				<ul>
+					<!--space--> <br>				
+				</ul>
+								
+				<ul>
+					<b>L21.</b> How many months have you ben incarcerated in your life?:<input type="text" name="social" value=" " size="7">
+				</ul>
+				
+				<ul>
+					<b>L22.</b> How long was your last incarceration?: <input type="text" name="social" value=" " size="7">
+				</ul>
+				
+				<ul>
+					<b>L23.</b> What was it for?: <input type="text" name="social" value=" " size="7">
+				</ul>
+				
+				<ul>
+					<!--space--> <br>				
+				</ul>
+							
+				<ul>
+					<b>L24.</b> Are you presently awaiting charges, trial, or sentencing?:
+					<input type="radio" name="no">
+					<?php if (isset($no) && $no=="No") echo "checked";?>
+					No
+					<input type="radio" name="yes">
+					<?php if (isset($yes) && $yes=="Yes") echo "checked";?>
+					Yes					
+				</ul>
+				
+				<ul>
+					<b>L25.</b> What for?: <input type="text" name="social" value=" " size="7">
+					
+				</ul>
+				
+				<ul>
+					<!--space--> <br>				
+				</ul>
+					
+				<ul>
+					<b>L26.</b> How many days in the past 30 days were you detained or incarcerated? <input type="text" name="social" value=" " size="7">
+				</ul>
+				
+				<ul>
+					<b>L27.</b> How many days in the past 30 days have you engaged in illegal activities for profit? <input type="text" name="social" value=" " size="7">
+				</ul>
+				
+				<ul>
+					<!--space--> <br>				
+				</ul>
+				
+				<ul>
+					<b><i>For Questions L28-29 ask the patient to use the Patient's Rating Scale. </i></b><br>				
+				</ul>
+				
+				<ul>
+					<!--space--> <br>				
+				</ul>
+				
+				<ul>
+					<b>L28.</b> How serious do you feel your present legal problems are? <input type="text" name="social" value=" " size="7">
+				</ul>
+				
+				<ul>
+					<b>L29.</b> How important to you now is counseling or referral for those legal problems:<input type="text" name="social" value=" " size="7">
+				</ul>
+				
+				<ul>
+					<!--space--> <br>				
+				</ul>
+				
+				<ul>
+					<b><i>Interviewer Severity Rating</i></b>				
+				</ul>
+				
+				<ul>
+					<b>L30.</b> How would you rate the patient's need for legal services or counseling? <input type="text" name="id" value=" " size="7">				
+				</ul>
+				
+				<ul>
+					<!--space--> <br>				
+				</ul>
+				
+				<ul>
+					<b><i>Confidence Rating</i></b>	<br>
+                    						
+				</ul>
+				
+				<ul>
+					<b><i>Is the information significantly distored by:</i></b>				
+				</ul>
+				
+				<ul>
+					<b>L31.</b> Patient's misrepresentation?:  
+					<input type="radio" name="no">
+					<?php if (isset($no) && $no=="No") echo "checked";?>
+					No
+					<input type="radio" name="yes">
+					<?php if (isset($yes) && $yes=="Yes") echo "checked";?>
+					Yes
+				
+				</ul>
+				
+				<ul>
+					<b>L32.</b> Patient's inability to understand?:
+					<input type="radio" name="no">
+					<?php if (isset($no) && $no=="No") echo "checked";?>
+					No
+					<input type="radio" name="yes">
+					<?php if (isset($yes) && $yes=="Yes") echo "checked";?>
+					Yes
+				</ul>
+				
+				<ul>
+					<!--space--> <br>				
+				</ul>
+				
+				<ul>
+					<b><i>Legal Comments: </i></b> <br>
+					(include question number with your notes) 				
+				</ul>
+				
+				<ul>
+					<textarea name="comment" rows="50" cols="40"></textarea>				
+				</ul>
+				
+				<ul>
+				<button type="button" onclick="window.print();return false;" />Print!</button>
+				</ul>
+					
+			</div>
+			
+
+			
+
+			
+
+			<!-- Comment: <textarea name="comment" rows="5" cols="10"></textarea> -->
+
+			
+		</div>
+	</div>
+		<div id="footer">
+		<div>
+		<!--
+			<div>
+				<h3>Pasadena</h3>
+				<ul>
+					<li>1710 Strawberry Rd.</li>				
+					<li>Suite 300</li>
+					<li>Pasadena, TX 77502</li>
+					<li>Office: 346-701-1500</li>
+				</ul>			
+			</div>		
+			<div>
+				<h3>Galveston</h3>
+				<ul>
+					<li>Old Central Cultural Center</li>				
+					<li>2627 Avenue M</li>
+					<li>Galveston, TX 77502</li>
+					<li>Office: 409-443-5451</li>
+				</ul>			
+			</div>	
+			
+			<div>
+				<h3>canada</h3>
+				<ul>
+					<li>457-380-1654 main</li>				
+					<li>257-301-9417 toll free</li>
+				</ul>			
+			</div>	
+			<div>
+				<h3>middle east</h3>
+				<ul>
+					<li>457-380-1654 main</li>				
+					<li>257-301-9417 toll free</li>
+				</ul>			
+			</div>	
+			<div>
+				<h3>follow us:</h3>
+				<a class="facebook" href="http://facebook.com/freewebsitetemplates" target="_blank">facebook</a>		
+				<a class="twitter" href="http://twitter.com/fwtemplates" target="_blank">twitter</a>
+			</div>	
+			-->
+		</div>
+		<div>
+			<p>&copy Copyright 2019. All rights reserved</p>
+		</div>
+	</div>
+	</body>
+</html>

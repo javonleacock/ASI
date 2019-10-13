@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<!-- Template by freewebsitetemplates.com -->
+<html>
+<head>
+<meta charset="utf-8" />
+<title>The R.E.A.L. Program</title>
+<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+</head>
+<body>
+	<div id="header">
+			<div id="logo">
+				<a href="index.html"><img src="images/logo.jpg" alt="" /></a>		
+			</div>		
+			<ul>
+				<li><a href="index.html"><span>home</span></a></li>
+				<li class="selected"><a href="general.html"><span>General Information</span></a></li>
+				<li><a href="medical.html"><span>Medical</span></a></li>
+				<li><a href="employment.html"><span>Employment</span></a></li>
+				<li><a href="alcohol.html"><span>Alcohol/Drugs</span></a></li>
+                <li><a href="legal.html"><span>Legal</span></a></li>
+				<li><a href="history.html"><span>History</span></a></li>
+                <li><a href="relation.html"><span>Relationships</span></a></li>	
+                <li><a href="psych.html"><span>Psychiatric</span></a></li>					
+			</ul>
+	</div>
+	<div id="body">
+		<div class="about">
+			<h1>General Information</h1>   
+			<div>
+				<ul>
+					G1. ID No: <input type="text" name="id" value=" ">				
+				</ul>
+				
+				<ul>
+					G2. Social Sec No: <input type="text" name="social" value=" ">
+				</ul>
+				
+				<ul>
+					G3. Date of Admission: <input type="date" name="DOA">
+				</ul>
+				
+				<ul>
+					G4. Date of Interview: <input type="date" name="DOI">
+				</ul>
+				
+				<ul>
+					G5. Time Begun: <input type="time" name="TB">
+				</ul>
+				
+				<ul>
+					G6. Time Ended: <input type="time" name="TE">
+				</ul>
+				
+				<ul>
+					G7. Class:
+					<input type="radio" name="class">
+					<?php if (isset($class) && $class=="intake") echo "checked";?>
+					Intake
+					<input type="radio" name="class">
+					<?php if (isset($class) && $class=="followup") echo "checked";?>
+					Follow-up
+					
+				</ul>
+				
+				<ul>
+					G8. Contact Code:
+					<input type="radio" name="contact">
+					<?php if (isset($contact) && $contact=="inperson") echo "checked";?>
+					In-Person
+					<input type="radio" name="contact">
+					<?php if (isset($contact) && $contact=="telephone") echo "checked";?>
+					Telephone   (Intake ASI must be in person)
+					
+				</ul>
+				
+				<ul>
+					G8. Gender:
+					<input type="radio" name="gender">
+					<?php if (isset($gender) && $gender=="Male") echo "checked";?>
+					Male
+					<input type="radio" name="gender">
+					<?php if (isset($gender) && $gender=="Female") echo "checked";?>
+					Female
+					
+				</ul>
+				
+				<ul>
+					G9. Interviewer Code No./Initials: <input type="text" name="id" value=" ">				
+				</ul>
+				
+				<ul>
+					G10. Special:  
+					<select>
+						<option value="pt">Patient terminated</option>
+						<option value="pr">Patient refused</option>
+						<option value="pu">Patient unable to respond</option>
+						<option value="na">Not applicable</option>
+					</select> 
+				
+				</ul>
+				
+				<ul>
+					Name: <input type="text" name="name" value=" ">				
+				</ul>
+				
+				<ul>
+					Address 1: <input type="text" name="add1" value=" ">
+				</ul>
+				
+				<ul>
+					Address 2: <input type="text" name="add2" value=" ">				
+				</ul>
+				
+				<ul>
+					City: <input type="text" name="city" value=" ">
+				</ul>
+				
+				<ul>
+					State: <input type="text" name="state" value=" ">				
+				</ul>
+				
+				<ul>
+					Zip Code: <input type="text" name="zip" value=" ">
+				</ul>
+				
+				<ul>
+					G14. How long have you lived at this address?: <input type="text" name="city" value=" ">
+				</ul>
+				
+				<ul>
+					G15. Is this residence owned by you or your family:
+					<input type="radio" name="no">
+					<?php if (isset($no) && $no=="No") echo "checked";?>
+					No
+					<input type="radio" name="yes">
+					<?php if (isset($yes) && $yes=="Yes") echo "checked";?>
+					Yes
+				</ul>
+				
+				<ul>
+					G16. Date of Birth: <input type="date" name="DOB">				
+				</ul>
+				
+				<ul>
+					G17. Of what race do you consider yourself?:  
+					<select>
+						<option value="race">White (not hispanic)</option>
+						<option value="race">Black (not hispanic)</option>
+						<option value="race">American Indian</option>
+						<option value="race">Alaskan Native</option>
+						<option value="race">Asian/Pacific Islander</option>
+						<option value="race">Hispanic-Mexican</option>
+						<option value="race">Hispanic-Puerto Rican</option>
+						<option value="race">Hispanic-Cuban</option>
+						<option value="race">Other Hispanic</option>
+					</select> 
+				
+				</ul>
+				
+				<ul>
+					G18. Do you have a religious preference?:  
+					<select>
+						<option value="religious">Protestant</option>
+						<option value="religious">Catholic</option>
+						<option value="religious">Jewish</option>
+						<option value="religious">Islamic</option>
+						<option value="religious">Other</option>
+						<option value="religious">None</option>
+					</select> 
+				
+				</ul>
+				
+				<ul>
+					G19. Have you been in a controlled environment in the past 30 days?:  
+					<select>
+						<option value="religious">No</option>
+						<option value="religious">Jail</option>
+						<option value="religious">Alcohol/Drug Treatment</option>
+						<option value="religious">Medical Treatment</option>
+						<option value="religious">Psychiatric Treatment</option>
+						<option value="religious">Other</option>
+					</select> 
+					If other: <input type="text" name="state" value=" ">
+				    <!--come back to this
+					A place, theoretically, without access to drugs or alcohol.
+					-->
+				</ul>
+				
+				<ul>
+					G20. How many days?: <input type="text" name="state" value=" ">
+					<!--"NN" if Question G19 is No. Refers to total number of days detained in the past 30 days.-->
+				</ul>
+				
+				<ul>
+					ADDITIONAL TEST RESULTS
+				</ul>
+				
+				<ul>
+					G21: <textarea name="comment" rows="1" cols="30"></textarea>
+				</ul>
+				
+				<ul>
+					G22: <textarea name="comment" rows="1" cols="30"></textarea>
+				</ul>
+				
+				<ul>
+					G23: <textarea name="comment" rows="1" cols="30"></textarea>
+				</ul>
+				
+				<ul>
+					G24: <textarea name="comment" rows="1" cols="30"></textarea>
+				</ul>
+				
+				<ul>
+					G25: <textarea name="comment" rows="1" cols="30"></textarea>
+				</ul>
+				
+				<ul>
+					G26: <textarea name="comment" rows="1" cols="30"></textarea>
+				</ul>
+				
+				<ul>
+					G27: <textarea name="comment" rows="1" cols="30"></textarea>
+				</ul>
+				
+				<ul>
+					G28: <textarea name="comment" rows="1" cols="30"></textarea>
+				</ul>
+				
+				<ul>
+					<!--space--> <br>				
+				</ul>
+				
+				<ul>
+				<b><i>Severity Profile </i></b> <br>
+				</ul>
+				
+				<ul>
+				<table style="width:30%">
+					<tr>
+						<th>Problems</th>
+						<th>Index</th>
+					</tr>
+					<tr>
+						<td><b>Medical</b></td>
+						<td><select>
+					    <option value="pt">0</option>
+						<option value="pt">1</option>
+						<option value="pr">2</option>
+						<option value="pt">3</option>
+						<option value="pt">4</option>
+						<option value="pr">5</option>
+						<option value="pt">6</option>
+						<option value="pt">7</option>
+						<option value="pr">8</option>
+						<option value="pr">9</option>
+						</select></td>
+					</tr>
+					<tr>
+						<td><b>Emp/Support</b></td>
+						<td><select>
+					    <option value="pt">0</option>
+						<option value="pt">1</option>
+						<option value="pr">2</option>
+						<option value="pt">3</option>
+						<option value="pt">4</option>
+						<option value="pr">5</option>
+						<option value="pt">6</option>
+						<option value="pt">7</option>
+						<option value="pr">8</option>
+						<option value="pr">9</option>
+						</select></td>
+					</tr>
+					<tr>
+						<td><b>Alcohol</b></td>
+						<td><select>
+					    <option value="pt">0</option>
+						<option value="pt">1</option>
+						<option value="pr">2</option>
+						<option value="pt">3</option>
+						<option value="pt">4</option>
+						<option value="pr">5</option>
+						<option value="pt">6</option>
+						<option value="pt">7</option>
+						<option value="pr">8</option>
+						<option value="pr">9</option>
+						</select></td>
+					</tr>
+					<tr>
+						<td><b>Drugs</b></td>
+						<td><select>
+					    <option value="pt">0</option>
+						<option value="pt">1</option>
+						<option value="pr">2</option>
+						<option value="pt">3</option>
+						<option value="pt">4</option>
+						<option value="pr">5</option>
+						<option value="pt">6</option>
+						<option value="pt">7</option>
+						<option value="pr">8</option>
+						<option value="pr">9</option>
+						</select></td>
+					</tr>
+					<tr>
+						<td><b>Legal</b></td>
+						<td><select>
+					    <option value="pt">0</option>
+						<option value="pt">1</option>
+						<option value="pr">2</option>
+						<option value="pt">3</option>
+						<option value="pt">4</option>
+						<option value="pr">5</option>
+						<option value="pt">6</option>
+						<option value="pt">7</option>
+						<option value="pr">8</option>
+						<option value="pr">9</option>
+						</select></td>
+					</tr>
+					<tr>
+						<td><b>Family/Social</b></td>
+						<td><select>
+					    <option value="pt">0</option>
+						<option value="pt">1</option>
+						<option value="pr">2</option>
+						<option value="pt">3</option>
+						<option value="pt">4</option>
+						<option value="pr">5</option>
+						<option value="pt">6</option>
+						<option value="pt">7</option>
+						<option value="pr">8</option>
+						<option value="pr">9</option>
+						</select></td>
+					</tr>
+					<tr>
+						<td><b>Psych.</b></td>
+						<td><select>
+					    <option value="pt">0</option>
+						<option value="pt">1</option>
+						<option value="pr">2</option>
+						<option value="pt">3</option>
+						<option value="pt">4</option>
+						<option value="pr">5</option>
+						<option value="pt">6</option>
+						<option value="pt">7</option>
+						<option value="pr">8</option>
+						<option value="pr">9</option>
+						</select></td>
+					</tr>
+				</table> 
+				</ul>
+				
+				<ul>
+					<!--space--> <br>				
+				</ul>
+				
+				<ul>
+					<b><i>General Information Comments: </i></b> <br>
+					(include question number with your notes) 				
+				</ul>
+				
+				<ul>
+					<textarea name="comment" rows="25" cols="40"></textarea>				
+				</ul>
+				
+				<ul>
+				<button type="button" onclick="window.print();return false;" />Print!</button>
+				</ul>
+				
+				
+				
+			</div>
+			
+
+			
+
+			
+
+			<!-- Comment: <textarea name="comment" rows="5" cols="10"></textarea> -->
+
+			
+		</div>
+	</div>
+		<div id="footer">
+		<div>
+		<!--
+			<div>
+				<h3>Pasadena</h3>
+				<ul>
+					<li>1710 Strawberry Rd.</li>				
+					<li>Suite 300</li>
+					<li>Pasadena, TX 77502</li>
+					<li>Office: 346-701-1500</li>
+				</ul>			
+			</div>		
+			<div>
+				<h3>Galveston</h3>
+				<ul>
+					<li>Old Central Cultural Center</li>				
+					<li>2627 Avenue M</li>
+					<li>Galveston, TX 77502</li>
+					<li>Office: 409-443-5451</li>
+				</ul>			
+			</div>	
+			
+			<div>
+				<h3>canada</h3>
+				<ul>
+					<li>457-380-1654 main</li>				
+					<li>257-301-9417 toll free</li>
+				</ul>			
+			</div>	
+			<div>
+				<h3>middle east</h3>
+				<ul>
+					<li>457-380-1654 main</li>				
+					<li>257-301-9417 toll free</li>
+				</ul>			
+			</div>	
+			<div>
+				<h3>follow us:</h3>
+				<a class="facebook" href="http://facebook.com/freewebsitetemplates" target="_blank">facebook</a>		
+				<a class="twitter" href="http://twitter.com/fwtemplates" target="_blank">twitter</a>
+			</div>	
+			-->
+		</div>
+		<div>
+			<p>&copy Copyright 2019. All rights reserved</p>
+		</div>
+	</div>
+	</body>
+</html>
